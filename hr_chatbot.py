@@ -120,11 +120,11 @@ def hr_message(question, data, problem=None):
 
 # ---------------------------------------------------------------- calling the model
 def get_key():
-    key = os.environ.get("GROQ_API_KEY")
+    key = os.environ.get("GEMINI_API_KEY")
     if key:
         return key
     try:
-        return st.secrets["GROQ_API_KEY"]
+        return st.secrets["GEMINI_API_KEY"]
     except Exception:
         return None
 
