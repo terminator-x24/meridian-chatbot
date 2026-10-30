@@ -165,7 +165,7 @@ def main():
     st.caption(f"Fictional company. Answers come only from policy version {POLICY_VERSION}.")
 
     if not get_key():
-        st.error("No API key found. Add GROQ_API_KEY to the app's Secrets settings, then reboot the app.")
+        st.error("No API key found. Add GEMINI_API_KEY to the app's Secrets settings, then reboot the app.")
         st.stop()
 
     if "chat" not in st.session_state:
